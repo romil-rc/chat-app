@@ -1,0 +1,95 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 90vh;
+  filter: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03))
+    drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+  /* border: 1px solid red; */
+}
+.chatbox {
+  position: relative;
+  height: inherit;
+  width: inherit;
+  /* border: 1px solid red; */
+  background-color: rgb(245, 248, 251);
+  border-radius: 10px;
+  /* filter: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03))
+    drop-shadow(0 8px 5px rgb(0 0 0 / 0.08)); */
+  /* overflow-y: scroll; */
+  /* overflow: hidden; */
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.type {
+  display: flex;
+  width: inherit;
+  position: sticky;
+  bottom: 0;
+  z-index: 1;
+}
+#currentMessage {
+  width: inherit;
+  border: none;
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  /* border-bottom-right-radius: 10px; */
+  padding: 5px;
+  font-size: larger;
+}
+#sentButton {
+  background-color: white;
+  padding: 2px;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+}
+#sentButton:hover {
+  opacity: 0.7;
+}
+#chatMsg {
+  width: fit-content;
+  padding: 5px;
+  color: white;
+  font-weight: 100;
+  border-radius: 10px;
+  border-bottom-right-radius: 0px;
+  background-color: rgb(110, 72, 170);
+  margin-left: auto;
+  filter: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03))
+    drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+}
+#chatRepeatMsg {
+  width: fit-content;
+  margin-right: auto;
+  background-color: white;
+  padding: 5px;
+  color: rgb(110, 72, 170);
+  border-radius: 10px;
+  border-bottom-left-radius: 0px;
+  font-weight: 200;
+  filter: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03))
+    drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+}
+.header {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-size: larger;
+  color: white;
+  text-align: left;
+  padding: 10px;
+  background-color: rgb(110, 72, 170);
+}
+#allMessages {
+  height: 84vh;
+  margin-right: 5px;
+  margin-left: 5px;
+  text-align: -webkit-center;
+  overflow-y: scroll;
+}
+#allMessages::-webkit-scrollbar {
+  display: none;
+}
+#allMessages {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
